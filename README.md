@@ -100,11 +100,11 @@ my-portfolio/
 
 ## 📬 Contact
 
-**Your Name** — [your@email.com](mailto:your@email.com)
+**Timothy Muiruri** — [timothymuiruri101@gmail.com](mailto:your@email.com)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://linkedin.com/in/your-profile)
-[![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=github)](https://github.com/your-username)
-[![Portfolio](https://img.shields.io/badge/Live%20Demo-green?style=flat&logo=vercel)](https://your-portfolio-url.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://linkedin.com/in/Timothy Muiruri)
+[![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=github)](https://github.com/mnm-uxri)
+[![Portfolio](https://img.shields.io/badge/Live%20Demo-green?style=flat&logo=vercel)](https://github.com/mnm-uxri/my-portfolio)
 
 ---
 
