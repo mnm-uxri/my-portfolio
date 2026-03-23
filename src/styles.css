@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+/* Text */
+h1, h2, h3, h4, h5, h6 {
+  color: #cc0000;
+}
+
+p {
+  color: #000000;
+}
+
+/* Background */
+body {
+  background-color: #243d26;
+}
+
+/* Buttons */
+button, .btn-primary {
+  background-color: #ff69b4;
+  color: rgb(110, 110, 110);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover, .btn-primary:hover {
+  background-color: #ff1493;
+}
