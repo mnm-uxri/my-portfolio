@@ -1,26 +1,142 @@
-/* You can add global styles to this file, and also import other style files */
-/* Text */
-h1, h2, h3, h4, h5, h6 {
-  color: #cc0000;
+/* =============================================
+   Timothy Muiruri · IT Portfolio — Global Styles
+   ============================================= */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Syne:wght@400;700;800&display=swap');
+
+/* ── Color tokens ── */
+:root {
+  --bg-page:        #0f1b2d;   /* main page background     */
+  --bg-surface:     #162032;   /* cards, nav, sections     */
+  --bg-surface-alt: #0a1628;   /* navbar / darker surfaces */
+  --border:         #1e3a5f;   /* all borders              */
+
+  --color-accent:   #00e5c0;   /* primary accent (teal)    */
+  --color-accent-hover: #00c9a8;
+  --color-secondary: #4db8ff;  /* secondary accent (blue)  */
+  --color-secondary-hover: rgba(77, 184, 255, 0.12);
+
+  --text-heading:   #e8f4ff;   /* h1–h6                    */
+  --text-body:      #b8cfe8;   /* paragraphs               */
+  --text-muted:     #5b7fa6;   /* labels, hints, nav links */
 }
 
-p {
-  color: #000000;
+/* ── Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Background */
 body {
-  background-color: #424246;
+  background-color: var(--bg-page);
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Buttons */
+/* ── Headings ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syne', sans-serif;
+  color: var(--text-heading);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1rem; }
+h5 { font-size: 0.9rem; }
+h6 { font-size: 0.8rem; }
+
+/* ── Paragraph / body text ── */
+p {
+  color: var(--text-body);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+p.muted, .text-muted {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+/* ── Links ── */
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+/* ── Buttons ── */
 button, .btn-primary {
-  background-color: #ff69b4;
-  color: rgb(110, 110, 110);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.3rem;
+  background-color: var(--color-accent);
+  color: #0a1628;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   border: none;
+  border-radius: 2px;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 button:hover, .btn-primary:hover {
-  background-color: #ff1493;
+  background-color: var(--color-accent-hover);
 }
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.3rem;
+  background-color: transparent;
+  color: var(--color-secondary);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+/* ── Cards ── */
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+/* ── Nav ── */
+nav {
+  background-color: var(--bg-surface-alt);
+  border-bottom: 1px solid var(--border);
+  padding: 1.2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ── Utility ── */
+.accent  { color: var(--color-accent); }
+.muted   { color: var(--text-muted); }
+.surface { background-color: var(--bg-surface); }
